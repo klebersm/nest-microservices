@@ -1,0 +1,13 @@
+apps:
+  - script: ./dist/apps/auth/main.js
+    name: dev.auth
+    watch: false
+    exec_mode: fork
+
+  - script: ./dist/apps/manufactor-api/main.js
+    name: dev.api
+    watch: false
+    exec_mode: fork
+    env:
+      ENVIRONMENT: PROD
+      TZ: 'America/Sao_Paulo'
